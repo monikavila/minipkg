@@ -3,7 +3,3 @@ test_that("what_time() funciona", {
   expect_snapshot(what_time("FR"), error = TRUE)
 }
 )
-
-test_that(
-  withr::local_options(digits = 3)
-)
