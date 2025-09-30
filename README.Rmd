@@ -1,5 +1,17 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # minipkg
 
@@ -10,8 +22,7 @@ The goal of minipkg is to get the time
 
 ## Installation
 
-You can install the development version of minipkg from
-[GitHub](https://github.com/) with:
+You can install the development version of minipkg from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
@@ -22,12 +33,10 @@ pak::pak("monikavila/minipkg")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```{r example}
 library(minipkg)
 ## Example code: no language
 what_time()
-#> [1] "Yippie! Ahora son las 14:31!"
 ## Adding language: en or es 
 what_time("en")
-#> [1] "Yeah! It is 14:31 now!"
 ```
